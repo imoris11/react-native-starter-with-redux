@@ -5,6 +5,7 @@ import Map from './containers/SecondScreen';
 import Welcome from './containers/Welcome';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
+import WalkthroughTrackRide from './containers/WalkthroughTrackRide';
 
 const Tab = createBottomTabNavigator();
 
@@ -37,7 +38,7 @@ const Stack = createStackNavigator();
 function MyStack() {
   return (
     <Stack.Navigator headerMode="none">
-      <Stack.Screen name="Welcome" component={Welcome} />
+      <Stack.Screen name="Welcome" component={WalkthroughTrackRide} />
       <Stack.Screen name="App" component={App} />
     </Stack.Navigator>
   );
